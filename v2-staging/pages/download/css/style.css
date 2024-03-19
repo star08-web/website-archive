@@ -1,4 +1,4 @@
-@import url('/fonts/fonts.css');
+@import url('../../../fonts/fonts.css');
 *{
     font-family: 'Nunito Sans', ui-sans-serif, sans-serif;
     color: white;
