@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Houston, we have a problem</title>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="shortcut icon" href="./errorpages/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="./errorpages/site.webmanifest">
+    <style>
+        *{
+            color: gainsboro;
+            font-family: 'Inter', sans-serif;
+        }
+        body{
+            background-color: rgb(114, 137, 218);
+            margin: 0px;
+            padding: 0px;
+        }
+        .error-text{
+            position: absolute;
+            font-size: xx-large;
+            top: 40%;
+            left: 5%;
+        }
+        .error-description{
+            position: absolute;
+            font-size: x-large;
+            top: 48%;
+            left: 5%;  
+        }
+        .error-code{
+            position: absolute;
+            font-size: larger;
+            top: 55%;
+            left: 5%;  
+        }
+        .error-img{
+            position: absolute;
+            top: 25%;
+            left: 70%;
+        }
+        .expo{
+            top: 66%;
+        }
+        @media only screen and (max-width:600px){
+            .error-img{
+            transform: scale(0.5);
+            top: -10%;
+            left: -10%;
+            }
+            .error-text{
+                font-size: x-large;
+                top: 45%;
+                text-align: justify;
+            }
+            .error-description{
+                top: 50%;
+                font-size: larger;
+                text-align: justify;
+                width: fit-content;
+                height: fit-content;
+            }
+            .error-code{
+                left: 30%;
+                top: 60%;
+                font-size: larger;
+                text-align: justify;
+                width: fit-content;
+                height: fit-content; 
+            }
+        }
+        @media only screen and (min-width:701px) and (max-width:1200px) and (max-height:1200px) and (min-height:750px){
+            .error-img{
+            transform: scale(0.7);
+            top: -7%;
+            left: 13%;
+            }
+            .error-text{
+                font-size: xx-large;
+                top: 35%;
+                left: 15%;
+                text-align: justify;
+            }
+            .error-description{
+                top: 40%;
+                font-size: x-large;
+                text-align: justify;
+                width: fit-content;
+                height: fit-content;
+            }
+            .error-code{
+                left: 30%;
+                top: 50%;
+                font-size: x-large;
+                text-align: justify;
+                width: fit-content;
+                height: fit-content; 
+            }
+    }
+    @media only screen and (max-height:600px) and (min-width:600px) and (max-width:1300px){
+            .error-img{
+            transform: scale(0.30);
+            top: -40%;
+            left: 13%;
+            }
+            .error-text{
+                font-size: xx-large;
+                top: 40%;
+                left: 15%;
+                text-align: justify;
+            }
+            .error-description{
+                top: 60%;
+                font-size: x-large;
+                text-align: justify;
+                width: fit-content;
+                height: fit-content;
+            }
+            .error-code{
+                left: 35%;
+                top: 80%;
+                font-size: x-large;
+                text-align: justify;
+                width: fit-content;
+                height: fit-content; 
+            }
+    }
+    </style>
+</head>
+<body>
+    <a href="https://star08-web.streamlink.to/lol" title="Don't Click me"><img class="error-img" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/480/null/external-hamster-veterinary-flaticons-lineal-color-flat-icons-2.png"/></a>
+    <a class="error-text">OH NO, it seems the page is lost</a>
+    <a class="error-description">don't worry. our hamsters are doing their best to find it</a>
+    <a class="error-code">Error_Code: 404</a>
+</body>
+</html>

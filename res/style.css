@@ -1,0 +1,25 @@
+@import url('https://fonts.bunny.net/css?family=fragment-mono:400,400i');
+@import url('https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css');
+body{
+    font-family: 'Fragment Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji';
+}
+:root{
+    --background: #1e1e1e;
+    --background-body: #1e1e1e;
+    --background-alt: #2e2e2e; 
+}
+#version{
+    color: gainsboro;
+    transition: all 150ms;
+}
+#version:hover{
+    color : dodgerblue;
+    text-decoration: none;
+    font-size: larger;
+}
+#version:hover::after{
+    content: " <--";
+}
+blockquote{
+    font-style: normal !important;
+}
