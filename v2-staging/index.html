@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/devices.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/downloads.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="I am only a developer (kinda)">
+    <meta name="keywords" content="developer, web development, coding">
+    <meta name="author" content="Star08-web">
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Star08-web">
+    <meta property="og:description" content="I am only a developer (kinda)">
+    <meta property="og:image" content="/img/pc-bg.png">
+    <meta property="og:url" content="https://star08-web.pages.dev">
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Star08-web">
+    <meta name="twitter:description" content="I am only a developer (kinda)">
+    <meta name="twitter:image" content="/img/pc-bg.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star08-web</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bg"></div>
+        <figure class="navbar">
+            <a class="home" href="#home"><img src="./img/logo.png" class="brand-logo" width="50" height="50"></a>
+            <a class="home-desc">Star08-web</a>
+            <a class="downloads" href="#downloads"><i class="bi bi-cloud-download-fill"></i></a>
+            <a class="downloads-desc">Downloads</a>
+            <a class="devices" href="#devices"><i class="bi bi-laptop-fill"></i></a>
+            <a class="devices-desc">Devices</a>
+            <a class="music" href="#music"><i class="bi bi-music-note"></i></a>
+            <a class="music-desc">Music</a>
+            <a class="toggler"><i class="bi bi-list"></i></a>
+        </figure>
+        <div class="mobbar">
+            <i class="bi bi-list mobmenu"></i>
+            <a href="#home" class="homenw moblink">Home</a>
+            <a href="#downloads" class="downnw moblink">Downloads</a>
+            <a href="#devices" class="devnw moblink">Devices</a>
+            <a href="#music" class="musicnw moblink">Music</a>
+        </div>
+        <div class="homepage">
+            <img class="avatar" src="./img/doodle1.png">
+            <a class="intro">Hi, Im Star, A Youtuber/Student From Italy</a>
+            <a class="something">i make videos about windows and sometimes i create my own programs and music</a>
+            <a class="contact-btn" title="contact me"><img class="btn-img-quick" src="./img/e-mail.svg"></a>
+            <a class="youtube-btn" onclick="controlyt('1')" title="visit my youtube channel"><img class="btn-img-quick" src="./img/youtube.svg"></a>
+            <a class="bio-btn" title="follow me everywhere"><img class="btn-img-quick" src="./img/kissing-cat.svg"></a>
+            <div class="yt-channel-page-embed">
+                <div class="ytem">
+                    <iframe id="yt-iframe" style="position: absolute; width: 100%; height: 100%; border-radius: 15px;" class="yt-channel-embed" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLEC99ANh92hGqPra9LpK2GJXY0dsFtm2B" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <a onclick="controlyt('Stop')" class="closebtn-yt">Close</a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <iframe class="contact-form-iframe" src="/dead.html" frameborder="0" allowfullscreen></iframe>
+            <a class="closebtn-cnt">Close</a>
+        </div>
+        <div class="biolink">
+            <iframe class="biolink-iframe" src="/dead.html" frameborder="0" allowfullscreen></iframe>
+            <a class="closebtn-bio">Close</a>
+        </div>
+        <div class="devicespage">
+            <div class="devices-class">
+                <figure class="cherry" id="cherry">
+                    <img class="pc-laptop" src="./img/pc-laptop.png">
+                    <a class="realname" href="#cherry">HP Envy x360 Convertible 13-ay0xxx</a>
+                    <a class="codename">CodeName: Cherry</a>
+                    <a class="OS">Os: Windows 10 22h2 (home)</a>
+                    <a class="specs">System Specs: <a class="specs-link link" target="_blank" rel="noopener noreferrer" href="https://support.hp.com/it-it/document/c06638985">See Here</a></a>
+                </figure>
+                <!-- space -->
+                <figure class="kirita" id="kirita">
+                    <img class="phone" src="./img/phone.png">
+                    <a class="realname-phone" href="#kirita">Apple Iphone 11</a>
+                    <a class="codename-phone">CodeName: Kirita</a>
+                    <a class="OS-phone">Os: IOS 16.2</a>
+                    <a class="specs-phone">System Specs: <a class="specs-link link" target="_blank" rel="noopener noreferrer" href="https://support.apple.com/kb/SP804?locale=it_IT">See Here</a></a>
+                </figure>
+                <!-- space -->
+                <figure class="phoenix" id="Phoenix">
+                    <img class="tablet" src="./img/tablet.svg" width="151">
+                    <a class="realname-tablet" href="#phoenix">Samsung Galaxy S5E</a>
+                    <a class="codename-tablet">CodeName: Phoenix</a>
+                    <a class="OS-tablet">Os: One Ui (android)/Samsung DEX (android)</a>
+                    <a class="specs-tablet">System Specs: <a class="specslink-tablet link" target="_blank" rel="noopener noreferrer" href="https://www.samsung.com/it/tablets/galaxy-tab-s/galaxy-tab-s5e-10-5-inch-black-64gb-lte-sm-t725nzkaitv/">See Here</a></a>
+                </figure>
+                <!-- space -->
+                <figure class="coso" id="coso">
+                    <img class="coso-img" src="./img/xbox.png" width="151">
+                    <a class="realname-coso" href="#coso">Xbox One X</a>
+                    <a class="codename-coso">CodeName: Coso</a>
+                    <a class="OS-coso">Os: Xbox Os (Windows)</a>
+                    <a class="specs-coso">System Specs: <a class="specslink-coso link" target="_blank" rel="noopener noreferrer" href="https://www.fastweb.it/fastweb-plus/digital-magazine/xbox-one-x-recensioni-scheda-tecnica/">See Here</a></a>
+                </figure>
+            </div>
+        </div>
+        <div class="musicpg">
+                <figure class="summerframe">
+                    <iframe id="summer-iframe" class="summer frame" src="https://lnkfi.re/alxsummer/widget" frameborder="0"></iframe>
+                    <a class="download-btn" href="https://alexifiles.has.rocks/summer.mp3" target="_blank" rel="noopener noreferrer">Download <i class="bi bi-arrow-down"></i></a>
+                    <a class="stream-btn" onclick="copyToClipboard('https://ffm.to/alexifysummer')">Get Link <i class="bi bi-play-fill"></i></a>
+            </figure>
+            <figure class="lofiframe">
+                    <iframe id="lfd-iframe" class="lofidream frame" src="https://lnkfi.re/alxlofidream/widget" frameborder="0"></iframe>
+                    <a class="download-btn" href="https://alexifiles.has.rocks/lofi_dream.mp3" target="_blank" rel="noopener noreferrer">Download <i class="bi bi-arrow-down"></i></a>
+                    <a class="stream-btn" onclick="copyToClipboard('https://lnkfi.re/alxlofidream')">Get Link <i class="bi bi-play-fill"></i></a>
+            </figure>
+            </div>
+            <div class="download">
+                <figure class="osbake">
+                    <img class="osbake-img" src="./img/osbake_upscayl_4x_realesrgan-x4plus-anime.png" width="120" height="120" alt="osbake_logo">
+                    <h1 class="osbake-title">Osbake</h1>
+                    <a class="osbake-pricing"><i class="bi bi-currency-dollar"></i> Price: Free</a>
+                    <a class="osbake-tag"><i class="bi bi-bookmark"></i> Tags: Sysadmin, Utility, Administration</a>
+                    <a class="osbake-rating"><i class="bi bi-star-fill"></i> Rating: Unrated</a>
+                    <a class="osbake-os-support"><i class="bi bi-laptop"></i> Os Supported: <i class="bi bi-windows"></i></a>
+                    <a href="./pages/download/osbake.html" target="_blank" rel="noopener noreferrer" class="dl-btn-osbake"><i class="bi bi-file-arrow-down-fill"></i></a>
+                </figure>
+                <figure class="apmc">
+                    <img class="apmc-img" src="./img/minecraft.png" width="120" height="120" alt="Minecraft_logo">
+                    <h1 class="apmc-title">AddPlayersMC</h1>
+                    <a class="apmc-pricing"><i class="bi bi-currency-dollar"></i> Price: Free</a>
+                    <a class="apmc-tag"><i class="bi bi-bookmark"></i> Tags: Games</a>
+                    <a class="apmc-rating"><i class="bi bi-star-fill"></i> Rating: Unrated</a>
+                    <a class="apmc-os-support"><i class="bi bi-laptop"></i> Os Supported: All (java/minecraft) <i class="bi bi-filetype-java"></i></a>
+                    <a href="./pages/download/addplayersmc.html" target="_blank" rel="noopener noreferrer" class="dl-btn-apmc"><i class="bi bi-file-arrow-down-fill"></i></a>
+                </figure>
+                <figure class="awn">
+                    <img class="awn-img" src="./img/1-removebg-preview_upscayl_4x_realesrgan-x4plus-anime.png" width="120" height="120" alt="awn_logo">
+                    <h1 class="awn-title">Auto Writing Notepad</h1>
+                    <a class="awn-pricing"><i class="bi bi-currency-dollar"></i> Price: Free</a>
+                    <a class="awn-tag"><i class="bi bi-bookmark"></i> Tags: Fun</a>
+                    <a class="awn-rating"><i class="bi bi-star-fill"></i> Rating: Unrated</a>
+                    <a class="awn-os-support"><i class="bi bi-laptop"></i> Os Supported: <i class="bi bi-windows"></i></a>
+                    <a href="./pages/download/awnprank.html" target="_blank" rel="noopener noreferrer" class="dl-btn-awn"><i class="bi bi-file-arrow-down-fill"></i></a>
+                </figure>
+                <figure class="w2b">
+                    <img class="w2b-img" src="https://edgestatic.azureedge.net/shared/cms/lrs1c69a1j/section-images/be59a012c1654bc69649172db5cc68d0.svg" width="120" height="120" alt="w2b_logo">
+                    <h1 class="w2b-title">webview2 browser</h1>
+                    <a class="w2b-pricing"><i class="bi bi-currency-dollar"></i> Price: Free</a>
+                    <a class="w2b-tag"><i class="bi bi-bookmark"></i> Tags: Web, Browser</a>
+                    <a class="w2b-rating"><i class="bi bi-star-fill"></i> Rating: Unrated</a>
+                    <a class="w2b-os-support"><i class="bi bi-laptop"></i> Os Supported: <i class="bi bi-windows"></i></a>
+                    <a href="./pages/download/webview2browser.html" target="_blank" rel="noopener noreferrer" class="dl-btn-w2b"><i class="bi bi-file-arrow-down-fill"></i></a>
+                </figure>
+            </div>
+        </div>
+        <div class="cpalertmsgbox">
+            <i class="cpalert-icn bi bi-clipboard-check"></i>
+            <h1 class="cpalert-text">Copied =)</h1>
+            <a class="cpalert-hide">Ok 😃</a>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+<!--Used materials from twemoji (https://twemoji.twitter.com/)-->
+</html>

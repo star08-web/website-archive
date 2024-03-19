@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Error</title>
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <style>
+        *{
+            color: white;
+            font-family: 'Nunito Sans', ui-sans-serif, sans-serif;
+        }
+        .kpanic{
+            display: none;
+        }
+        .kpanic.show{
+            display: inline;
+        }
+        .kpanic-text{
+            color: white;
+            font-family: 'kernel', ui-sans-serif, sans-serif;
+            font-weight: 200;
+        }
+        .dbg_rd{
+            font-family: 'kernel', ui-sans-serif, sans-serif;
+            color: rgb(255, 38, 0);
+        }
+        .bg{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -20;
+            background: linear-gradient(270deg, #004bad, #31017c, #cb6be6);
+            background-size: 400% 400%;
+            -webkit-animation: movebg 42s ease infinite;
+            -moz-animation: movebg 42s ease infinite;
+            -o-animation: movebg 42s ease infinite;
+            animation: movebg 42s ease infinite;
+        }
+        @-webkit-keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-o-keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }         
+        @keyframes movebg {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        .ea{
+            background-color: transparent;
+            cursor: pointer;
+            position: absolute;
+            top: 85%;
+            left: 85%;
+            width: 10%;
+            height: 15%;
+            z-index: 5;
+        }
+        body{
+            background-color: black;
+            margin: 0px;
+            padding: 0px;
+        }
+        .err404{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-size: large;
+        }
+        .err404-btn-return{
+            position: relative;
+            padding: 15px;
+            border: white 5px solid;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: x-large;
+            transition: all 150ms;
+        }
+        .err404-btn-return:hover{
+            background-color: white;
+            color: black;
+        }
+        .err404-btn-return:not(:hover){
+            background-color: transparent;
+            color: white;
+        }
+        .err404.hide{
+            display: none;
+        }
+        .text{
+            position: fixed;
+            top: 4%;
+            left: 30%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="kpanic">
+        <a class="kpanic-text">
+            web-pci.c:v033.9232.2013 21/03/2021 Star08-web
+       </a>
+       <br>
+       <a class="kpanic-text">
+           https://www.star08-web.pages.dev/slt0/webpcii1.html
+       </a>
+       <br>
+       <a class="kpanic-text">
+           hda0: STAR08-WEB VIRTUAL HARDDISK, ATA DISK drive
+       </a>
+       <br>
+       <a class="kpanic-text">
+           ide0 at 0x1f0 - 0x1f7, 0x3f6 on irq 14
+       </a>
+       <br>
+       <a class="kpanic-text">
+           hdc: STAR08-WEB VIRTUAL CD-ROM, ATAPI CD/DVD-ROM drive
+       </a>
+       <br>
+       <a class="kpanic-text">
+           ide1 at 0x444 - 0x910, 0x211 on irq 15
+       </a>
+       <br>
+       <a class="kpanic-text">
+           fd0: STAR08-WEB VIRTUAL FLOPPY, ATA FLOPPY drive
+       </a>
+       <br>
+       <a class="kpanic-text">
+           ide2 at 0x7363-0x6e6565, 0x4569 on irq 16
+       </a>
+       <br>
+       <a class="kpanic-text">
+           ACPI: PCI Interrupt Link [[LNKC] ebabked at IRQ 10
+       </a>
+       <br>
+       <a class="kpanic-text">
+           ACPI: PCI Interrupt 0000:00:03:.0[[A] -> Link [[LNKC] -> GSI 10 (level, low) -> IRQ 10
+       </a>
+       <br>
+       <a class="kpanic-text">
+           eno1: Star08-Web Project//23 found at 0xc453, IRQ 10, 09:10:21:86:75:30
+       </a>
+       <br>
+       <a class="kpanic-text">
+           hda: max request size: 512KiB
+       </a>
+       <br>
+       <a class="kpanic-text">
+           hda: 2147483648 sectors (1 TB) w/256KiB Cache, CHS=178/255/63, (U)DMA
+       </a>
+       <br>
+       <a class="kpanic-text">
+           hda: hda1
+       </a>
+       <br>
+       <a class="kpanic-text">
+           hdc: ATAPI 4x CD-ROM drive, 512kB Cache, (U)DMA
+       </a>
+       <br>
+       <a class="kpanic-text">
+           Uniform CD-ROM driver Revision: 3.20
+       </a>
+       <br>
+       <a class="kpanic-text">
+           Done.
+       </a>
+       <br>
+       <a class="kpanic-text">
+           Begin: pageloader.so
+       </a>
+       <br>
+       <a class="kpanic-text">
+           Done.
+       </a>
+       <br>
+       <a class="kpanic-text">
+           pageloader.so[[3352]: Importing _pgreadnka: ImportError('No module named _pgreadnka',)
+       </a>
+       <br>
+       <a class="kpanic-text">
+           pageloader.so[[3352]: nvdrs: Loaded, about to disable thread optimizations.
+       </a>
+       <br>
+       <a class="kpanic-text">
+           pageloader.so[[3352]: nvdrs: Disabled thread optimizations.
+       </a>
+       <br>
+       <a class="kpanic-text">
+           pageloader.so: SUCCESS.
+       </a>
+       <br>
+       <a class="kpanic-text">
+           Done.
+       </a>
+       <br>
+       <a class="kpanic-text">
+           Begin: pageloader.so -> linux-4.12.14
+       </a>
+       <br>
+       <a class="kpanic-text">
+           /init: /init: 151: smoklioinb.a : 0xforce=panic
+       </a>
+       <br>
+       <a class="kpanic-text">Kernel panic - not syncing: Attempted to kill init!</a>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="debug_block">
+        <a class="dbg_rd">VM Crash, no infrastructure damage detected.</a>
+        <br>
+        <a class="dbg_rd">Monitor Kernel Access evasion risk: Unknown</a>
+        <br>
+        <a class="dbg_rd">this incident will be reported</a>
+        <br>
+        <a class="dbg_rd">---------- Error 404 ----------</a> 
+       </div>
+    </div>
+    <div class="err404">
+        <div class="bg"></div>
+        <div class="text">
+            <h1>Resource Error</h1>
+            <h2>The specified Resource wasn't found</h2>
+            <h3>HTTP Error 404</h3>
+            <br>
+            <br>
+            <a class="err404-btn-return" href="/">Back to Main Website</a>
+        </div>
+    </div>
+    <div class="ea"></div>
+    <script>
+        let easteregg = document.querySelector(".kpanic");
+        let toggler = document.querySelector(".ea");
+        let normal = document.querySelector(".err404");
+        toggler.addEventListener("click", function () {
+        easteregg.classList.toggle("show");
+        normal.classList.toggle("hide");
+});
+    </script>
+</body>
+</html>

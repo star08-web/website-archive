@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Us a second =)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">         
+    <style>
+        @import url('/fonts/fonts.css');
+        body{
+            background-color: black;
+        }
+        *{
+            font-family: 'nunitosans',Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+        .wait{
+            font-size: large;
+        }
+        .wait-2{
+            font-size: larger;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <h1 class="Wait">Get Ready, Something Amazing is waiting you</h1>
+        <h2 class="wait-2">Please Wait 😎</h2>
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        var hashtag = window.location.hash;
+        switch (hashtag) {
+                case '#YTS':
+                setTimeout(function() {
+                    window.location.replace("https://www.youtube.com/@star08-web?sub_confirmation=1");
+                }, 5000);
+                    break;
+                    case '#FollowMe':
+                setTimeout(function() {
+                    window.location.replace("https://www.koji.to/star08web");
+                }, 5000);
+                    break;
+                default:
+                    window.location.replace("/404.html");
+            }
+    </script>
+</html>
