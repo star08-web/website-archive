@@ -17,6 +17,11 @@
     <link rel="manifest" href="img/site.webmanifest">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+    .disabled{
+        --blockquote-border-color: #cd0b28 !important;
+    }
+</style>
 <body data-theme="dark" data-nav="false">
     <div class="site-wrap">
         <div class="grid-bg"></div>
@@ -46,7 +51,16 @@
             <h5>I miei video</h5>
             <br>
             <div class="container" id="videocontainer">
-
+                <blockquote class="disabled">
+                    <h4>
+                        API Disabilitata
+                    </h4>
+                    <p>
+                        La API di YouTube è disabilitata visto che stai usando una versione archiviata del mio sito web
+                        <br>
+                        per vedere i miei video <a href="https://youtube.com/@star08-web">visita il mio canale</a>
+                    </p>
+                </blockquote>
             </div>
         </main>
     </div>
@@ -97,8 +111,9 @@
     <script src="./js/notification.js"></script>
     <script src="./js/utils.js"></script>
     <script src="./js/dyslexia-friendly.js"></script>
-    <script async src="./js/youtube.js"></script>
+    <!-- <script async src="./js/youtube.js"></script> -->
     <script>        
         AOS.init()
+        spawnnotify("APIERROR: YouTube API is disabled", "error")
     </script>
 </html>
