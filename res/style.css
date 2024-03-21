@@ -1,12 +1,7 @@
-@import url('https://fonts.bunny.net/css?family=fragment-mono:400,400i');
-@import url('https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css');
+@import url('https://fonts.bunny.net/css?family=exo-2:400,500,600,700,800');
+@import url('https://cdn.jsdelivr.net/npm/water.css@2/out/water.css');
 body{
-    font-family: 'Fragment Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji';
-}
-:root{
-    --background: #1e1e1e;
-    --background-body: #1e1e1e;
-    --background-alt: #2e2e2e; 
+    font-family: 'Exo 2', -apple-system, blinkmacsystemfont, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 #version{
     color: gainsboro;
