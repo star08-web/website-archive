@@ -4,7 +4,7 @@ body{
     font-family: 'Exo 2', -apple-system, blinkmacsystemfont, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 #version{
-    color: gainsboro;
+    color: var(--text-main);
     transition: all 150ms;
 }
 #version:hover{
