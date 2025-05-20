@@ -3,16 +3,16 @@
 body{
     font-family: 'Exo 2', -apple-system, blinkmacsystemfont, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-#version{
+.version{
     color: var(--text-main);
     transition: all 150ms;
 }
-#version:hover{
+.version:hover{
     color : dodgerblue;
     text-decoration: none;
     font-size: larger;
 }
-#version:hover::after{
+.version:hover::after{
     content: " <--";
 }
 blockquote{
