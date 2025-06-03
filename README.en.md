@@ -16,3 +16,4 @@ warning: archived versions may not have the latest content and projects, for whi
 - v4.2 (2024)
 - v4.3 (2025)
 - v4.4 (2025)
+- v4.5 (2025)
